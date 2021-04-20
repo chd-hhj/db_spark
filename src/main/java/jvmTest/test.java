@@ -19,5 +19,6 @@ public class test {
        test1 a = new test1();
        a.hashCode();
        a.toString();
+        System.out.println("this is master");
     }
 }
