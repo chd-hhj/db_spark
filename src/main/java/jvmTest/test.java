@@ -8,11 +8,16 @@ import java.sql.SQLOutput;
  * //测试git
  */
 
+class test1 {
+    test1(){
+    }
+}
+
 public class test {
 
     public static void main(String[] args) {
-        String a=new String("1");
-        String b=new String("2");
-        System.out.println(a.equals(b));
+       test1 a = new test1();
+       a.hashCode();
+       a.toString();
     }
 }
