@@ -40,14 +40,30 @@ public class SearchUpper {
         if(i>=arr.length)
             return -1;
         else
-            return arr[i];
+            return i;
 
+    }
+    //lower递归
+    public static int searchLower(int[] arr, float tar,int l,int r){
+        if(l==r){
+            if(l<0)
+                return -1;
+            else
+                return l;
+        }
+        int mid=(l+r+1)/2;
+        if(arr[mid]<tar){
+            return searchLower(arr,tar,mid,r);
+        }
+        else
+            return searchLower(arr,tar,l,mid-1);
     }
 
     @Test
     public void test(){
-        int[] a={1,2,3,4,5};
-        System.out.println(SearchUpper(a, 2.5F));
+        int[] a={1,2,3,3,3,3,5,7};
+        //System.out.println(SearchUpper(a, 2.5F));
+        System.out.println(searchLower(a,2.5F,0,7));
     }
 
 }
