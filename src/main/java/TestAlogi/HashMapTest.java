@@ -3,6 +3,7 @@ package TestAlogi;
 import org.junit.Test;
 
 import java.sql.SQLOutput;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,9 +49,7 @@ public class HashMapTest {
     @Test
     public void test(){
         int[] arr={3,2,3,1,2,4,5,5,6};
-
-
-
+        Arrays.sort(arr);
         }
     }
 
